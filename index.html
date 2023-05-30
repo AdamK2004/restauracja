@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Restauracja pod Leszczyną</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+
+        }
+
+        header {
+            background-color: #4d6e05;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .left-block {
+            flex: 1;
+            background-color: #f0e9b5;
+            padding: 20px;
+        }
+
+        .right-block {
+            flex: 1;
+            background-color: #d3ac00;
+            padding: 20px;
+        }
+
+        .contact-block {
+            flex-basis: 100%;
+            background-color: #c49781;
+            padding: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th,
+        td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #fefefe;
+        }
+
+        th {
+            background-color: #b05555;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        form label {
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        form input[type="text"],
+        form input[type="email"],
+        form textarea {
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        form button {
+            padding: 10px 20px;
+            background-color: #4d6e05;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #000000;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        img {
+            width: 100px;
+            height: 100px;
+        }
+
+        h1 {
+            font-size: 40px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Restauracja Pod Leszczyną</h1>
+        <p>Smaczne jedzenie w przyjemnym otoczeniu.</p>
+    </header>
+
+    <div class="container">
+        <div class="left-block">
+            <h2>Menu</h2>
+            <table>
+                <tr>
+                    <th><img src="menu.jpg" alt="Menu"></th>
+                    <th><img src="menu1.jpg" alt="Menu"></th>
+                    <th><img src="menu2.jpg" alt="Menu"></th>
+                    <th><img src="menu3.jpg" alt="Menu"></th>
+                </tr>
+            </table>
+
+            <table>
+                <tr>
+                    <th>Danie</th>
+                    <th>Cena</th>
+                </tr>
+                <tr>
+                    <td>Placek po Zbójnicku</td>
+                    <td>25 zł</td>
+                </tr>
+                <tr>
+                    <td>Zrazy w sosie</td>
+                    <td>39 zł</td>
+                </tr>
+                <tr>
+                    <td>Rosół z kury</td>
+                    <td>17 zł</td>
+                </tr>
+                <tr>
+                    <td>Żurek</td>
+                    <td>15 zł</td>
+                </tr>
+                <tr>
+                    <td>Tiramisu</td>
+                    <td>20 zł</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="right-block">
+            <h2>Rezerwacja</h2>
+            <form action="#" method="POST">
+                <label for="name">Imię i nazwisko:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="date">Data rezerwacji:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="time">Godzina rezerwacji:</label>
+                <input type="time" id="time" name="time" required>
+
+                <label for="guests">Liczba gości:</label>
+                <input type="number" id="guests" name="guests" required>
+
+                <label for="message">Dodatkowe uwagi:</label>
+                <textarea id="message" name="message"></textarea>
+
+                <button type="submit">Zarezerwuj</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="contact-block">
+        <h2>Kontakt</h2>
+        <p>Restauracja Pod Leszczyną</p>
+        <p>ul.Jana Kochanowskiego 24, 26-700 Zwoleń</p>
+        <p>Telefon: 506 928 454</p>
+        <p>Email: kontaktpodleszczyna@gmail.com</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Restauracja Pod Leszczyną. Wszelkie prawa zastrzeżone.</p>
+    </footer>
+</body>
+
+</html>
